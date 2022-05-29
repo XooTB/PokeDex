@@ -1,0 +1,14 @@
+.navBar {
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 11v;
+
+    .searchScc {
+        .search {
+            width: 20%;
+            height: 20px;
+        }
+    }
+}
