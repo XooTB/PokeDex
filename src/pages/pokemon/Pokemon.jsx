@@ -1,11 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './Pokemon.styles.scss';
 import { useParams } from "react-router-dom";
 
 function Pokemon() {
     const pokemonName = useParams().name;
+    const [data, setData] = useState();
+
     useEffect(() => {
-        const data = pokemonName;
+        fetch(
+            process.env.REACT_APP_API + `/pokemon/${pokemonName}`)
+            .then(response => response.json())
+            .then(data => setData(data));
     }, [pokemonName])
 
 
