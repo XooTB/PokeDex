@@ -1,0 +1,33 @@
+.Carousel {
+    width: 30vw;
+    height: 30vw;
+    background-color: antiquewhite;
+    display: flex;
+
+    .slide {
+        margin: auto;
+        width: 100%;
+        display: flex;
+
+        .img {
+            margin: auto;
+            height: 20vw;
+        }
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+
+        .BtnLeft {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .BtnRight {
+            font-size: 30px;
+            cursor: pointer;
+
+        }
+    }
+}
