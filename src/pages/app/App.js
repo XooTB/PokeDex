@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import NavBar from '../../containers/navBar/NavBar';
-import Pokemon from '../pokemon/Pokemon';
+import PokemonContainer from '../pokemonContainer/PokemonContainer'
 import Home from '../home/home';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/pokemon/:name' element={<Pokemon />} />
+        <Route path='/pokemon/:name' element={<PokemonContainer />} />
       </Routes>
 
     </div>

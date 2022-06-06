@@ -1,8 +1,11 @@
 .Carousel {
     width: 30vw;
     height: 30vw;
-    background-color: antiquewhite;
+    background-color: var(--color5);
     display: flex;
+    margin-left: 10vw;
+    margin-top: 30px;
+    border-radius: 20px;
 
     .slide {
         margin: auto;
@@ -18,6 +21,7 @@
     .btn {
         display: flex;
         align-items: center;
+        color: var(--color2);
 
         .BtnLeft {
             font-size: 30px;
