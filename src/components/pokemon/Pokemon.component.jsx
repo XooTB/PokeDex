@@ -7,9 +7,13 @@ import Stats from "../stats/Stats.component";
 function Pokemon({ data }) {
     return (
         <div className="pokemon">
-            <Carousel images={data.sprites} />
-            <h1>Name: {data.name}</h1>
-            <Stats stats={data.stats} />
+            <div className="hero">
+                <Carousel images={data.sprites} />
+                <div className="info">
+                    <h1 className="name">Name: {data.name}</h1>
+                    <Stats stats={data.stats} />
+                </div>
+            </div>
         </div>
     )
 }
