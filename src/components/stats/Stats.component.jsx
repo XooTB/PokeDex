@@ -1,19 +1,23 @@
 import React from "react";
-import './stats.styles.scss';
+import './Stats.styles.scss';
 
-import Stat from "../stat/stat.component";
-
-
-function Stats({ stats }) {
-    const list = stats.map((stat, i) => {
-        return <Stat name={stat.stat.name} baseStat={stat.base_stat} key={i} />
+export default function Stats({ stats }) {
+    const arr = stats.map(item => {
+        return (
+            <div className="stat">
+                <div className="statName">
+                    {item.stat.name}
+                </div>
+                <div className="statAmount">
+                    {item.base_stat}
+                </div>
+            </div>
+        )
     })
     return (
         <div className="stats">
-            {list}
+            <h3>Stats: </h3>
+            {arr}
         </div>
     )
 }
-
-
-export default Stats;

@@ -9,7 +9,18 @@
             margin-left: 30px;
 
             .name {
-                height: auto;
+                height: 9vh;
+                background-color: var(--color4);
+                width: 36vw;
+                border-radius: 20px;
+                text-align: left;
+
+                h1 {
+                    padding-top: 10px;
+                    padding-left: 20px;
+                    font-size: 32px;
+                    color: white;
+                }
             }
         }
 
