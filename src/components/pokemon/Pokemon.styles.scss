@@ -8,6 +8,10 @@
         .info {
             margin-left: 30px;
 
+            .table {
+                display: flex;
+            }
+
             .name {
                 height: 9vh;
                 background-color: var(--color4);

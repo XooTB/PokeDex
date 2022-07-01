@@ -1,0 +1,34 @@
+.otherInfo {
+    background-color: var(--color3);
+    width: 48%;
+    margin: 20px 0px;
+    border-radius: 10px;
+    margin-left: 20px;
+    height: 100%;
+
+
+    h3 {
+        border-bottom: 3px solid black;
+        padding: 10px 0px 5px 10px;
+        margin: 0px;
+    }
+
+    .row {
+        display: flex;
+        height: 3.6vw;
+        border-top: 1px dotted black;
+        font-size: .9vw;
+
+        .stat {
+            width: 50%;
+            text-align: left;
+            padding: 10px 0px 10px 20px;
+        }
+
+        .info {
+            width: 50%;
+            text-align: right;
+            padding: 10px 20px 10px 0px;
+        }
+    }
+}

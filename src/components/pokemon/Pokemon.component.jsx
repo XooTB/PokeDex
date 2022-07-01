@@ -6,7 +6,11 @@ import Stats from "../stats/Stats.component";
 import OtherInfo from "../otherInfo/OtherInfo.component";
 
 function Pokemon({ data }) {
-    const stats = ['height', 'weight', 'order']
+    const stats = ['height', 'weight', 'order', 'base_experience'];
+
+    const info = stats.map(stat => {
+        return data[stat]
+    })
     return (
         <div className="pokemon">
             <div className="hero">
@@ -15,8 +19,10 @@ function Pokemon({ data }) {
                     <div className="name">
                         <h1>Name: {data.name}</h1>
                     </div>
-                    <Stats stats={data.stats} />
-                    <OtherInfo />
+                    <div className="table">
+                        <Stats stats={data.stats} />
+                        <OtherInfo info={info} stats={stats} />
+                    </div>
                 </div>
             </div>
         </div>

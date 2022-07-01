@@ -1,8 +1,9 @@
 .stats {
     background-color: var(--color3);
-    width: 50%;
+    width: 48%;
     margin: 20px 0px;
     border-radius: 10px;
+    height: 100%;
 
     h3 {
         border-bottom: 3px solid black;
@@ -11,9 +12,9 @@
     }
 
     .stat {
-        border-bottom: 1px dotted black;
+        border-top: 1px dotted black;
         padding: 10px 5px;
-        font-size: 1.1vw;
+        font-size: .9vw;
         display: flex;
 
         .statName {
