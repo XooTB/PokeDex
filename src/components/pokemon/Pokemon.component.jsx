@@ -4,6 +4,7 @@ import './Pokemon.styles.scss';
 import Carousel from "../Carousel/Carousel.component";
 import Stats from "../stats/Stats.component";
 import OtherInfo from "../otherInfo/OtherInfo.component";
+import Moves from "../../containers/moves/moves.container";
 
 function Pokemon({ data }) {
     const stats = ['height', 'weight', 'order', 'base_experience'];
@@ -24,6 +25,9 @@ function Pokemon({ data }) {
                         <OtherInfo info={info} stats={stats} />
                     </div>
                 </div>
+            </div>
+            <div className="movesSection">
+                <Moves data={data.moves} />
             </div>
         </div>
     )

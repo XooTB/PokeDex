@@ -1,4 +1,5 @@
 .pokemon {
+
     .hero {
         display: flex;
         width: 80vw;
@@ -28,5 +29,9 @@
             }
         }
 
+    }
+
+    .movesSection {
+        display: block;
     }
 }

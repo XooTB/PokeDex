@@ -15,8 +15,10 @@ function Search() {
 
     return (
         <div className="SearchBar">
-            <input type='search' placeholder='Enter the Pokemon Name' ref={input} />
-            <button type="submit" onClick={handleSubmit}>Search</button>
+            <form onSubmit={handleSubmit}>
+                <input type='search' placeholder='Enter the Pokemon Name' ref={input} />
+                <button type="submit" onClick={handleSubmit}>Search</button>
+            </form>
         </div>
     );
 };

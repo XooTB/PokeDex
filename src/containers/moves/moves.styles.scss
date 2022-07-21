@@ -1,0 +1,22 @@
+.moves {
+    padding-top: 50px;
+    display: flex;
+
+    .moveList {
+        height: 500px;
+        width: 150px;
+        text-align: left;
+        overflow-x: scroll;
+        direction: rtl;
+    }
+
+
+    .movename {
+        cursor: pointer;
+        font-size: 1.2vw;
+
+        &:hover {
+            background-color: aliceblue;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.MoveStats {
+    .row {
+        display: flex;
+        width: 30vw;
+        padding-top: 20px;
+
+        .stat {
+            width: 50%;
+        }
+
+        .value {
+            width: 50%;
+        }
+    }
+}
