@@ -3,28 +3,42 @@ import { useState } from "react";
 import './moves.styles.scss';
 
 import MoveStats from "../../components/moveStats/moveStats.component";
+import { useEffect } from "react";
 
 export default function Moves({ data }) {
-    const moveList = data.map(move => move.move.name);
-    const [showMove, setMove] = useState(moveList[0]);
+    const movelist = data.map(move => move.move.name);
+
+    const [currentMove, setCurrentMove] = useState(movelist[0]);
+    const [moveInfo, setMoveInfo] = useState();
 
     const handleClick = (e) => {
         e.preventDefault();
+        setCurrentMove(e.target.textContent);
 
-        setMove(e.target.textContent);
     }
 
-    const moves = data.map((move, i) => {
-        return <div onClick={handleClick} key={i} className='movename'>{move.move.name}</div>
+    useEffect(() => {
+        data.filter((move) => {
+            if (move.move.name === currentMove) {
+                setMoveInfo(move.version_group_details);
+            };
+        });
+    }, [currentMove, data])
+
+    const list = movelist.map(move => {
+        return (
+            <div className="moveName" onClick={handleClick}>{move}</div>
+        )
     })
+
 
     return (
         <div className="moves">
             <div className="moveList">
-                {moves}
+                {list}
             </div>
-            <div>
-                <MoveStats moveName={showMove} />
+            <div className="stats">
+                <MoveStats moveName={currentMove} moveInfo={moveInfo} />
             </div>
         </div>
     )
