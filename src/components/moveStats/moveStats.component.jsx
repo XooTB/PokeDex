@@ -38,9 +38,8 @@ export default function MoveStats({ moveName, moveInfo }) {
                 <div className="gStats">
                     {generalStats}
                 </div>
-                <div className="learningInfo">
-                    <LearningInfo data={moveInfo} />
-                </div>
+
+                <LearningInfo data={moveInfo} />
             </div>
         );
     } else {

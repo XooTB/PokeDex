@@ -1,6 +1,12 @@
 .moves {
     padding-top: 50px;
     display: flex;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--color4);
+    margin-bottom: 100px;
 
     .moveList {
         height: 500px;

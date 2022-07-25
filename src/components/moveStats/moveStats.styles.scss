@@ -1,5 +1,11 @@
 .MoveStats {
+    display: flex;
+
     .gStats {
+        width: 50%;
+        height: 400px;
+        overflow-x: hidden;
+
         .statRow {
             display: flex;
             width: 30vw;
@@ -13,5 +19,11 @@
                 width: 50%;
             }
         }
+    }
+
+    .learningInfo {
+        font-size: 1.4vw;
+        width: 50%;
+        border: 1px solid black;
     }
 }
