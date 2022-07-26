@@ -1,5 +1,7 @@
 .MoveStats {
     display: flex;
+    background-color: white;
+    width: 66.6%;
 
     .gStats {
         width: 50%;
@@ -25,5 +27,6 @@
         font-size: 1.4vw;
         width: 50%;
         border: 1px solid black;
+
     }
 }

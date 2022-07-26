@@ -1,6 +1,9 @@
 .infoRow {
     display: flex;
     width: 500px;
+    border-bottom: 1px solid black;
+    width: auto;
+    padding-left: 30px;
 
     >h3 {
         font-size: 1.2vw;

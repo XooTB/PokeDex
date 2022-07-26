@@ -37,9 +37,7 @@ export default function Moves({ data }) {
             <div className="moveList">
                 {list}
             </div>
-            <div className="stats">
-                <MoveStats moveName={currentMove} moveInfo={moveInfo} />
-            </div>
+            <MoveStats moveName={currentMove} moveInfo={moveInfo} />
         </div>
     )
 }
