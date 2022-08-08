@@ -33,11 +33,16 @@ export default function Moves({ data }) {
 
 
     return (
-        <div className="moves">
-            <div className="moveList">
-                {list}
+        <div className="moves_container">
+            <div className="title">
+                <h2>Moves:</h2>
             </div>
-            <MoveStats moveName={currentMove} moveInfo={moveInfo} />
+            <div className="moves_info">
+                <div className="moveList">
+                    {list}
+                </div>
+                <MoveStats moveName={currentMove} moveInfo={moveInfo} />
+            </div>
         </div>
     )
 }

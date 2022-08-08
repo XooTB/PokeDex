@@ -11,13 +11,16 @@
         .statRow {
             display: flex;
             width: 30vw;
-            padding-top: 20px;
+            font-size: 18px;
+            padding: 10px 0px 10px 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-bottom: 1px dotted black;
 
-            .stat {
+            >.stat {
                 width: 50%;
             }
 
-            .value {
+            >.value {
                 width: 50%;
             }
         }
@@ -27,6 +30,8 @@
         font-size: 1.4vw;
         width: 50%;
         border: 1px solid black;
+        overflow-y: scroll;
+        overflow-x: hidden;
 
     }
 }
