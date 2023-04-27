@@ -17,6 +17,7 @@ export default function Moves({ data }) {
 
     }
 
+
     useEffect(() => {
         data.filter((move) => {
             if (move.move.name === currentMove) {
@@ -30,8 +31,6 @@ export default function Moves({ data }) {
             <div className="moveName" onClick={handleClick}>{move}</div>
         )
     })
-
-
     return (
         <div className="moves_container">
             <div className="title">
